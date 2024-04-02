@@ -1,13 +1,17 @@
-import React from 'react'
+import React from 'react';
+import features from './Data'; 
+import NavBar from './Navbar';
+import Main from './Main';
+import MainTwo from './MainTwo';
 
-import NavBar from './Navbar'
 const App = () => {
   return (
-    <div>
-     <NavBar/>
+    <div className='bg-gray-900'>
+      <NavBar />
+      <Main features={features} />
+      <MainTwo/>
     </div>
-  )
+  );
 }
 
 export default App;
-
